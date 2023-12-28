@@ -4,150 +4,76 @@ To develop a website to display details about the places around my house.
 
 ## Design Steps:
 
-### Step 1:
-Clone repository from the github.
+### Step 1: HTML Document Structure:
+Use the !DOCTYPE html declaration to specify the document type. Open the html tag. Inside the html tag, add a title tag to set the title of the page. Close the html tag.
 
-### Step 2:
-Add html files in static folder. Run the python file
+### Step 2: Body Section:
+Open the body tag. Add an h1 tag for the heading. Insert an img tag with the src attribute pointing to an image file, and use the usemap attribute to associate an image map.
 
+### step 3: Image Map:
+Define a map tag with the name attribute set to "image_map." Inside the map tag, use tags to define clickable areas on the image. Each area tag should have attributes like alt, title, href, coords, and shape to specify the details of the clickable area.
+
+### step 4: Close HTML Tags:
+Close the body tag. Optionally, close the HTML document. These steps outline the basic structure of my HTML program with an image map.
+
+### step 5:
+End program.
 ## Code:
-Include your HTML code here
-
-### map.html:
-```html
+```
 <!DOCTYPE html>
-<html >
-<head>
-    <title>imagemaps</title>
-</head>
-<style>
-  body{
-    background-color: bisque;
-    margin-left: 250px;
-  }
-  h1{
-    margin-left: 265px;
-  }
-</style>
-<body>
-    <h1>Places around me</h1>
-    <img src="tyrimage.jpg" usemap="#Thiruvaiyaru">
-<map name="Thiruvaiyaru">
-  <area alt="playground" title="playground" href="playground.html" coords="238,330,78" shape="circle">
-  <area alt="My home" title="My home" href="myhome.html" coords="170,444,298,516" shape="rect">
-  <area alt="Amalraj matric.hr.sec.School" title="Amalraj matric.hr.sec.school" href="school.html" coords="22,35,191" shape="circle">
-  <area alt="Andavar halwa shop" title="Andavar halwa shop" href="shop.html" coords="343,173,484,262" shape="rect">
-  <area alt="Big temple" title="Big temple" href="temple.html" coords="434,35,722,174" shape="rect">
-</map>
-</body>
+<html>
+    <title>images demo</title>
 </html>
-```
-
-### myhome.html:
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>My home</title>
-</head>
-<style>
-    *{
-        margin: 0%;
-        padding: 0%;
-        font-family: sans-serif;
-    }
-    body{
-        background-color: blueviolet;
-    }
-    .align{
-        margin: 75px auto;
-        width: 70%;
-    }
-    img{
-        float: left;
-        max-width: 55%;
-        border: 3px solid rgb(8, 8, 8);
-        border-radius: 20px;
-        margin-right: 15px;
-    }
-    .text h2{
-        font-size: xx-large;
-        font-weight: bolder;
-        color: bisque;
-    }
-    .text p{
-        padding-top: 10px;
-        font-size: large;
-        font-weight: 500;
-        color: aliceblue;
-    }
-</style>
 <body>
-    <div class="align">
-        <img style="" src="home.jpg" alt="view">
-        <div class="text">
-            <h2>My Home: A Place of Nature and Peace</h2>
-    <p>The view from my home is my absolute favourite. It fills me with joy and peace.
-         Similarly, everyone cherishes their home and has a favorite view that they adore.My home is near the river, where I can hear the soothing sound of water. It is surrounded by more trees, which provide me with fresh air and shade. There is a feel of natural environment, which makes me calm and happy.
-         My house is far from the main town, so there is no much unwanted noise. 
-         I can enjoy the peace and tranquility of my home.</p>
-           </div>
-        </div>
+    <h1>imagemaps demo</h1>
+          <img src="c:\Users\BSS\Pictures\Camera Roll\Saved Pictures\Ganesh D.png" usemap="#image_map">
+          <map name="image_map">
+    <h2>Railway station</h2>
+          <area alt="Railway station"  href="c:\Users\BSS\Pictures\Camera Roll\Saved Pictures\railway station.png" coords="949,275,1165,360" shape="rect">
+    <h3>Madras christian college</h3>
+          <area alt="Madras christian college"  href="c:\Users\BSS\Pictures\Camera Roll\Saved Pictures\mcc.png" coords="773,393,1102,507" shape="rect">
+    <h4>Arul Hospital</h4>
+          <area alt="Arul Hospital"  href="c:\Users\BSS\Pictures\Camera Roll\Saved Pictures\hospital.png" coords="5,416,168,513" shape="rect">
+    <h5>National Theatre</h5>
+          <area alt="National Theatre"  href="c:\Users\BSS\Pictures\Camera Roll\Saved Pictures\theatre.png" coords="663,184,903,258" shape="rect">
+    <h6>GRT jewellers</h6>
+          <area alt="GRT jewellers"  href="c:\Users\BSS\Pictures\Camera Roll\Saved Pictures\grt.png" coords="1010,-94,1199,13" shape="rect">
+    </map>
 </body>
-</html>
-```
-### ground.html:
-```html
-          <h2>My Playground: A Place of Sports and Fun.</h2>
-    <p>This is my vast playground, where I play badminton and cricket. 
-        I love both these sports, as they keep me fit and happy. 
-        Since I am a badminton player, I often go to the ground early in the morning with my brothers and friends. 
-        We enjoy playing in the cold weather, when we feel shivering and the early snowdrops. 
-        I like all these, as they give me relaxation, more energy and confidence for the whole day. 
-        I play cricket in the evening after my school. 
-        It is more fun, as we have teams and competitions. 
-        We cheer and celebrate each other's victories.</p>
-```
-### school.html:
-```html
-<h2>My School: A Place of Wisdom and Friendship</h2>
-    <p>This is my school, where I build myself for 17 years. 
-        It is a place of wisdom, where I learn from the best teachers and books. 
-        They teach me not only the academic subjects, but also the values and skills that I need in life. 
-        We all have many friends, but the childhood friends are a little more special. 
-        They are the ones who share our joys and sorrows, our dreams and fears. 
-        They are the friends I found in this place, where we have fun and support each other. 
-        I enjoyed a lot in my school days and it is always memorable and last for the rest of my life. 
-        I have many stories and experiences that I can cherish and share. 
-        I am very proud to be part of my school, which has shaped me into who I am today.
-```
-### temple.html:
-```html
-   <h2>My Favourite Temple: A Place of History and Devotion</h2>
-    <p>This is my favourite temple in my area. It is a place of worship and silence. Inside the temple, there is a pin drop silence that is maintained by the devotees. 
-        The temple is adorned with many sculptures and rare statues that depict the gods and goddesses. The temple has four entry points, each leading to a different sanctum. It is one of the oldest temples in the region. The oldest parts of the present masonry structure were built during the Chola dynasty in the 9th century.
-         The temple is famous for the festival called sabthasthanam, which is held every year with pride and devotion.
-         The festival involves the procession of the deities to seven other temples in the vicinity.</p>
-```
-### shop.html:
-```html
-<h2>Ashoka Halwa: A Traditional and Tasty Snack</h2>
-    <p>This is my area's famous snack. 
-        I love the taste of this food very much. 
-        This name is ashoka halwa. It is a traditional food for us. 
-        Ashoka halwa is a delicious, glossy dessert made with moong dal, sugar, ghee, wheat flour, and cardamom. 
-        It has a smooth and melt-in-mouth texture that makes it irresistible. 
-        Ashoka halwa is a speciality of Thiruvaiyaru, a town in Thanjavur district of Tamil Nadu. 
-        It is also known as pasi paruppu halwa or asoka halwa. 
-        It is usually prepared for festivals, weddings, and other occasions. 
-        It is served hot or warm, garnished with cashew nuts. 
-        Ashoka halwa is one of my favourite sweets and I enjoy it whenever I get a chance.
-    </p>
 ```
 ## Output:
-Include your output screenshot here
+## Map.html:
+```
+'My Area'
+```
+![my area](https://github.com/vamsikrishna272005/places-around-me/assets/147477015/4e0c3820-bb53-4412-99e4-ec4cdf92ae33)
 
-![imagemaps output](./Placesaroundmeoutput.jpg)
+### Railway station.html
+![Railway station](https://github.com/vamsikrishna272005/places-around-me/assets/147477015/ca9c5837-234b-4455-a119-4970ccca5253)
+
+### About details:
+Tambaram Railway Station stands as a crucial transportation nexus in the southern precincts of Chennai, Tamil Nadu, India. Located approximately 27 kilometers from the city center, it plays a pivotal role in connecting Chennai to various destinations within the state and beyond. This station is a bustling hub, primarily serving the needs of suburban commuters, facilitating daily travel for residents in and around the Tambaram locality. Known for its strategic location and extensive connectivity, Tambaram Railway Station is a key link in the Chennai Suburban Railway network, offering essential services to thousands of passengers each day. The station is equipped with facilities such as ticket counters, waiting areas, and various vendors, enhancing the overall travel experience. Tambaram Railway Station exemplifies the dynamic nature of India's railway infrastructure, constantly adapting to the needs of its diverse and growing population.
+### college.html
+![mcc](https://github.com/vamsikrishna272005/places-around-me/assets/147477015/30210066-5303-47e8-bb03-0192681421e1)
+
+### About details:
+MCC College, formally known as Madras Christian College, is a venerable institution renowned for its rich history and academic excellence. Situated in Tambaram, Chennai, MCC College was founded in 1837, making it one of the oldest and most prestigious colleges in India. Affiliated with the University of Madras, the college offers a diverse range of undergraduate and postgraduate programs across arts, sciences, and commerce. Known for its commitment to holistic education, MCC College places a strong emphasis on character development, values, and community service. The sprawling campus, adorned with historic architecture, provides a conducive environment for learning and personal growth. With a tradition of producing notable alumni who have excelled in various fields, MCC College continues to be a beacon of education, fostering academic excellence and contributing significantly to the cultural and intellectual fabric of the nation.
+### Theatre.html
+![theater](https://github.com/vamsikrishna272005/places-around-me/assets/147477015/8ae51496-a1f5-42d1-92c7-432706e6184a)
+
+### About details:
+The National Theatre, often considered a cultural cornerstone in many countries, represents a bastion of performing arts and theatrical excellence. In various nations, the term "National Theatre" is associated with a premier institution dedicated to the production and promotion of high-quality theatrical performances. These theaters serve as epicenters for creativity, showcasing a diverse array of dramatic productions ranging from classical plays to contemporary works. The National Theatre typically plays a vital role in preserving cultural heritage, fostering creativity, and providing a platform for the nation's artistic expression. With state-of-the-art facilities and a commitment to artistic innovation, these institutions contribute significantly to the cultural identity of a country, attracting both local and international audiences. The National Theatre often becomes a symbol of national pride, reflecting a commitment to the arts and the enduring power of storytelling in shaping and reflecting society
+### Jewellers.html
+![GRT](https://github.com/vamsikrishna272005/places-around-me/assets/147477015/bc0a35fc-0cf4-409a-be55-8abdef543f53)
+
+### About details:
+GRT Jewellers in Tambaram is a celebrated destination for discerning jewelry enthusiasts, situated in the vibrant city of Chennai. As a flagship store of the esteemed GRT Jewellers chain, it exemplifies a commitment to excellence and a tradition of crafting timeless pieces. The showroom in Tambaram showcases a stunning array of gold, diamond, and precious gemstone jewelry, reflecting a perfect blend of traditional artistry and contemporary designs. Known for its transparency, integrity, and customer-centric approach, GRT Jewellers in Tambaram has become a preferred choice for those seeking not just jewelry but an experience marked by trust and sophistication. Whether one is looking for bridal collections, everyday wear, or special occasion pieces, GRT Jewellers in Tambaram offers a diverse and meticulously curated selection that caters to the diverse tastes of its clientele. With a legacy of trust and a commitment to craftsmanship, GRT Jewellers in Tambaram continues to be a beacon of elegance in the world of jewelry retail.
+### Hospital.html
+![hospital](https://github.com/vamsikrishna272005/places-around-me/assets/147477015/5b0548f1-e772-41dc-ad7e-a0c280137002)
+
+### About details:
+Arul Hospital, located in Tambaram, Chennai, stands as a beacon of healthcare excellence in the region. Renowned for its commitment to providing quality medical care, Arul Hospital has established itself as a trusted healthcare institution. The hospital boasts a team of skilled and compassionate medical professionals who are dedicated to ensuring the well-being of their patients. With state-of-the-art facilities, advanced medical technology, and a comprehensive range of medical services, Arul Hospital caters to the diverse healthcare needs of the community. Specializing in various medical disciplines, including emergency care, surgery, diagnostics, and obstetrics, Arul Hospital upholds high standards of patient care and safety. The hospital's patient-centric approach, coupled with a focus on continual improvement, reflects its dedication to serving as a healthcare partner for individuals and families in Tambaram and the surrounding areas.
+
 
 ## Result:
-The program is executed successfully.
+Above the code is having 5 places is nearing my house. Thus, the program code is successfully executed.
